@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Лист & Легенда — книжный магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav"><a href="#product" class="brand">✦ Лист <span>&</span> Легенда</a>
+      <nav class="navlinks"><a href="#product">Главная</a><a href="#similar">Каталог</a><a href="#video">Обзор</a></nav>
+      <div class="actions"><span id="clock" aria-label="Время">00:00:00</span><button class="iconbtn" id="themeToggle"
+          aria-label="Сменить тему">☾</button><button class="cart" id="cartButton">🛒 <span
+            id="cartCount">0</span></button><button class="iconbtn" id="menuToggle" aria-expanded="false"
+          aria-controls="mobileMenu">☰</button></div>
+    </div>
+    <nav id="mobileMenu" class="mobile-menu" hidden><a href="#product">Главная</a><a href="#similar">Каталог</a><a
+        href="#video">Обзор</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="product">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">✧ КНИГА НЕДЕЛИ</div>
+          <h1>Истории, которые <em>остаются</em> с тобой</h1>
+          <p class="intro">Откройте двери в другие миры. Любимые книги, новые открытия и немного волшебства на каждой
+            странице.</p>
+          <div class="book-meta"><span>✦ Бестселлер</span><span>★ 4.9 / 5</span><span>Фэнтези</span></div>
+          <h2>Тёмная Башня</h2>
+          <p class="author">Стивен Кинг</p>
+          <p class="description">Легендарный цикл романов о стрелке Роланде и его путешествии к загадочной Тёмной Башне
+            — сердцу всех миров.</p>
+          <div class="purchase"><strong>1 000 ₽</strong><button class="primary" id="buyButton">Добавить в корзину
+              ↗</button></div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="cover"><img src="img/product-img.jpg" alt="Обложка книги Тёмная Башня"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="cover-fallback" style="display:none"><small>СТИВЕН
+                КИНГ</small><b>ТЁМНАЯ<br>БАШНЯ</b><span>✦</span><small>ЦИКЛ РОМАНОВ</small></div>
+          </div>
+          <div class="floating-label">✦ Выбор читателей<br><small>История, которую не забыть</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container feature-grid">
+        <div>✦ <b>Любимые истории</b><small>Книги для любого настроения</small></div>
+        <div>♧ <b>Тщательный выбор</b><small>Только интересные издания</small></div>
+        <div>♡ <b>С любовью к книгам</b><small>Для настоящих читателей</small></div>
+      </div>
+    </section>
+    <section class="section" id="video">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">ПОГРУЗИСЬ В ИСТОРИЮ</span>
+            <h2>Книжный обзор</h2>
+          </div>
+          <p>Узнай больше о мире любимых книг</p>
+        </div>
+        <div class="video-box">
+          <video id="bookVideo" muted controls playsinline preload="metadata">
+            <source src="video/video1.mp4" type="video/mp4">Ваш браузер не поддерживает видео.
+          </video>
+          <div class="video-controls">
+            <button id="videoPrev">⏮ Назад</button>
+            <button id="videoPlay">▶
+              Play</button>
+            <button id="videoPause">Ⅱ Pause</button>
+            <button id="videoMute">🔇 Mute</button>
+            <button id="videoUnmute">🔊 Unmute</button>
+            <button id="videoNext">Вперёд ⏭</button>
+          </div>
+          <p id="videoLabel">Обзор книги · Видео 1 из 2</p>
+        </div>
+      </div>
+    </section>
+    <section class="section similar" id="similar">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">ЧТО ЕЩЁ ПОЧИТАТЬ</span>
+            <h2>Похожие книги</h2>
+          </div>
+          <p>Новые миры уже ждут тебя</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-image"><img src="img/tolkin.jpg" alt="Властелин колец"
+                onerror="this.style.display='none'"><span>Фэнтези</span></div>
+            <div class="card-content"><small>Дж. Р. Р. Толкин</small>
+              <h3>Властелин колец</h3>
+              <p>Эпическое путешествие по Средиземью.</p><button class="card-btn" data-title="Властелин колец">Подробнее
+                ↗</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image alt"><img src="img/little.webp" alt="Маленький принц"
+                onerror="this.style.display='none'"><span>Классика</span></div>
+            <div class="card-content"><small>Антуан де Сент-Экзюпери</small>
+              <h3>Маленький принц</h3>
+              <p>Добрая история о дружбе и важном.</p><button class="card-btn" data-title="Маленький принц">Подробнее
+                ↗</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image third">
+              <div class="placeholder">✦<br>МИРЫ<br>ИСТОРИЙ</div><span>Подборка</span>
+            </div>
+            <div class="card-content"><small>Наша коллекция</small>
+              <h3>Магия страниц</h3>
+              <p>Книги, которые вдохновляют мечтать.</p><button class="card-btn" data-title="Магия страниц">Подробнее
+                ↗</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <div><b>✦ Лист & Легенда</b>
+        <p>У каждой истории есть начало.</p>
+      </div><span>© 2026 Книжный магазин</span>
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/clock.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
